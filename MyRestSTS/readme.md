@@ -11,3 +11,6 @@ Happy to share with anyone, happy anyone takes a copy, but I would recommend not
 
 This sample uses Spring STS from Eclipse (installed from MyMarketplace). Spring can be shipped with a full eclipse IDE that has been re-looked for spring. Here everything has been done using Eclipse Neon 2 from scratch
 
+
+###Running the application withing Spring Boot framework
+
