@@ -1,24 +1,29 @@
-/**
- * http://usejsdoc.org/
- * 
- * 
- * 
- */
-
 
 var express = require('express');
 var pathToRegexp = require('path-to-regexp')
 
 var app = express();
 
-app.get('/', function (req, res) {
+app.get('/', function (req, res, next) {
    res.send('Hello World');
 });
 
-app.get('/testconsole',function(req,res)
-		{   console.log('Test'); res.send('consolelog done ...');
-});
 
+app.get(/.*fly$/, function (req, res, next) {
+	  res.send('pattern /.*fly$/');
+	  next();
+	});
+
+app.get(/ab(cd)?e/, function (req, res, next) {
+	res.send(req.params);
+	next();
+	});
+
+
+//this route will print log whatever the request
+app.post(/.*/,function (req, res, next) {
+	console.log(req);
+	});
 
 var server = app.listen(8081, 'localhost', function () {
    var host = server.address().address;
@@ -26,3 +31,5 @@ var server = app.listen(8081, 'localhost', function () {
    
    console.log("Example app listening at http://%s:%s", host, port);
 });
+
+

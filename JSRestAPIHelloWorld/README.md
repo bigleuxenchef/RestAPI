@@ -27,7 +27,9 @@ Note : as a aficionado of eclipse, my version is particulary well setup from CDT
 * Create an empty javascript project
 * Create an empty javascript file (i.e. RestHelloWorld.js)
 
-First Program, let's call it the `JSRestSimplestHelloWorld.sh`
+###`JSRestSimplestHelloWorld.js`
+
+First Program, let's call it the `JSRestSimplestHelloWorld.js`
 
 This program when executed returns ''Hello World'' and the number of time the request was made
 
@@ -55,7 +57,10 @@ Second Program, will highlight how to manage several request and paths, let's ca
 
 
 ```javascript
+
 var express = require('express');
+var pathToRegexp = require('path-to-regexp')
+
 var app = express();
 
 app.get('/', function (req, res) {

@@ -5,10 +5,21 @@
     },
     "node": {
       
+    },
+    "node-extension": {
+      
+    },
+    "node-express": {
+      
+    },
+    "extjs5.0.0": {
+      
     }
   },
   "libs": [
     "ecma5",
-    "ecma6"
-  ]
+    "ecma6",
+    "browser"
+  ],
+  "ecmaVersion": 6
 }
