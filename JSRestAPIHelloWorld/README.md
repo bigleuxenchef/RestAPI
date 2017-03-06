@@ -87,11 +87,10 @@ var server = app.listen(8081, 'localhost', function () {
 
 Note a router is a link between path and function.
 
-Third Program will highlight three major features :
+Third Program will highlight two major features :
 
 1. Usage of regular expression to map path to function
-2. Path matching several routers, thus multiple router can execute at some point.
-3. decision to nest or not the router using `next()`
+2. Path matching several routers, thus multiple routers can execute at some point. Decision to nest or not the router using `next()`
 
 ```javascript
 var express = require('express');
@@ -128,5 +127,8 @@ var server = app.listen(8081, 'localhost', function () {
 });
 ```
 
-
 Then just open a browser on <http://localhost:8081>
+
+<code class="language-sh">$ npm install cookie-parser
+</code>
+<span style="color:blue">some *blue* text</span>.
