@@ -25,7 +25,33 @@ Note : as a aficionado of eclipse, my version is particulary well setup from CDT
 ##Introduction
 
 * Create an empty javascript project
-* Create en empty javadcript file (i.e. RestHelloWorld.js)
+* Create an empty javascript file (i.e. RestHelloWorld.js)
+
+First Program, let's call it the `JSRestSimplestHelloWorld.sh`
+
+```javascript
+var express = require('express');
+var app = express();
+var count = 0; //count number of request
+console.log("Example app listening at http://localhost:3000");
+
+
+app.get('/', function(req, res){
+	count = count + 1 ;
+	var message = 'hello world : ' + count;
+  res.send(message);
+  
+});
+```
+
+
+app.listen(3000);
+
+
+
+
+Second Program, will highlight how to manage several request and paths, let's call it `JSRestAPIHelloWorld.js`
+
 
 ```javascript
 var express = require('express');
@@ -44,4 +70,4 @@ var server = app.listen(8081, function () {
 ```
 
 
-then just open a browser on <http://localhost:8081>
+Then just open a browser on <http://localhost:8081>
