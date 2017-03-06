@@ -53,7 +53,8 @@ app.get('/', function(req, res){
 app.listen(3000);
 ```
 
-
+***
+###`JSRestAPIHelloWorld.js`
 
 Second Program, will highlight how to manage several request and paths, let's call it `JSRestAPIHelloWorld.js`
 
@@ -73,6 +74,51 @@ app.get('/testconsole',function(req,res)
 		{   console.log('Test'); res.send('consolelog done ...');
 });
 
+
+var server = app.listen(8081, 'localhost', function () {
+   var host = server.address().address;
+   var port = server.address().port;
+   
+   console.log("Example app listening at http://%s:%s", host, port);
+});
+```
+***
+###`JSRexExp.js`
+
+Note a router is a link between path and function.
+
+Third Program will highlight three major features :
+
+1. Usage of regular expression to map path to function
+2. Path matching several routers, thus multiple router can execute at some point.
+3. decision to nest or not the router using `next()`
+
+```javascript
+var express = require('express');
+var pathToRegexp = require('path-to-regexp')
+
+var app = express();
+
+app.get('/', function (req, res, next) {
+   res.send('Hello World');
+});
+
+
+app.get(/.*fly$/, function (req, res, next) {
+	  res.send('pattern /.*fly$/');
+	  next();
+	});
+
+app.get(/ab(cd)?e/, function (req, res, next) {
+	res.send(req.params);
+	next();
+	});
+
+
+//this route will print log whatever the request
+app.post(/.*/,function (req, res, next) {
+	console.log(req);
+	});
 
 var server = app.listen(8081, 'localhost', function () {
    var host = server.address().address;
