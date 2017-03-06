@@ -42,3 +42,6 @@ var server = app.listen(8081, function () {
    console.log("Example app listening at http://%s:%s", host, port)
 })
 ```
+
+
+then just open a browser on <http://localhost:8081>
