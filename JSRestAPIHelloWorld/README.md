@@ -27,6 +27,8 @@ Note : as a aficionado of eclipse, my version is particulary well setup from CDT
 * Create an empty javascript project
 * Create an empty javascript file (i.e. RestHelloWorld.js)
 
+***
+
 ###`JSRestSimplestHelloWorld.js`
 
 First Program, let's call it the `JSRestSimplestHelloWorld.js`
