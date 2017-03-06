@@ -7,10 +7,13 @@ Happy to share with anyone, happy anyone takes a copy, but I would recommend not
 
 #MyRestSTS (Spring Tool Suite)
 
-###IDE Eclipse
+### IDE Eclipse
 
 This sample uses Spring STS from Eclipse (installed from MyMarketplace). Spring can be shipped with a full eclipse IDE that has been re-looked for spring. Here everything has been done using Eclipse Neon 2 from scratch
 
 
-###Running the application withing Spring Boot framework
+### Running the application within Spring Boot framework
+
+Application has been tested in spring boot (with tomcat embeded) as well as in a full tomcat deployed model.
+
 
