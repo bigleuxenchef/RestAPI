@@ -8,3 +8,23 @@ Happy to share with anyone, happy anyone takes a copy, but I would recommend not
 
 
 Tested on Apache and Jetty!
+
+jetty maven dependencies, sometime recommendation is made to exclude some dependencies, it will need to be uncommented.
+
+```xml
+<exclusions>
+            <exclusion>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-server</artifactId>
+            </exclusion>
+            <exclusion>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-webapp</artifactId>
+            </exclusion>
+        <exclusion>
+            <artifactId>javax.servlet-api</artifactId>
+            <groupId>javax.servlet</groupId>
+        </exclusion>
+ 
+        </exclusions>
+```
