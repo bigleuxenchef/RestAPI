@@ -26,5 +26,5 @@ jetty maven dependencies, sometime recommendation is made to exclude some depend
             <groupId>javax.servlet</groupId>
         </exclusion>
  
-        </exclusions>
+</exclusions>
 ```

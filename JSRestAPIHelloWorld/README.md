@@ -128,7 +128,3 @@ var server = app.listen(8081, 'localhost', function () {
 ```
 
 Then just open a browser on <http://localhost:8081>
-
-***
-#C
-***
