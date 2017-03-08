@@ -23,10 +23,10 @@ Able to navigate well on eclipse, maven and linux is greatly appreciated.
 
 ## it runs
 
-Tested with Tomcat 7.0 and Tomcat 8.5 : using different deployment mode 
+Tested with Tomcat 7.0 and Tomcat 8.5 : using different deployment modes 
 * Custom location
 * workspace metadata
 * using Tomcat installation
 
-
+Jmeter has been tested in the mix!
 
