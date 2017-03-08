@@ -13,18 +13,17 @@ jetty maven dependencies, sometime recommendation is made to exclude some depend
 
 ```xml
 <exclusions>
-            <exclusion>
+        <exclusion>
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-server</artifactId>
-            </exclusion>
-            <exclusion>
+        </exclusion>
+        <exclusion>
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-webapp</artifactId>
-            </exclusion>
+        </exclusion>
         <exclusion>
             <artifactId>javax.servlet-api</artifactId>
             <groupId>javax.servlet</groupId>
         </exclusion>
- 
 </exclusions>
 ```

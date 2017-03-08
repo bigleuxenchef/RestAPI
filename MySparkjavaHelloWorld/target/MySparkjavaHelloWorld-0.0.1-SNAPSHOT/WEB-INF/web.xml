@@ -18,6 +18,10 @@
             <param-name>applicationClass</param-name>
             <param-value>com.hello.HelloWorld</param-value>
         </init-param>
+        <init-param>
+            <param-name>applicationClass</param-name>
+            <param-value>com.hello.HelloWorldPersonal</param-value>
+        </init-param>
     </filter>
 
     <filter-mapping>
