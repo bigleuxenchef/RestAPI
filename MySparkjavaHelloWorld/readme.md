@@ -27,14 +27,30 @@ jetty maven dependencies, sometime recommendation is made to exclude some depend
         </exclusion>
 </exclusions>
 ```
-Test using the Web browser
+###Test using the Web browser when using Jetty
 
 ```shell
 http://localhost:8080/hellobuddy/foo
-
+>Hellobuddy: foo
 http://localhost:8080/hellobuddy/
-
+>None
 http://localhost:8080/hello/foo
+>Hello: foo
 http://localhost:8080/
+>Hello World
+```
 
+
+###Test using the Web browser when using Tomcat
+
+```shell
+http://localhost:8080/MySparkjavaHelloWorld/hellobuddy/foo
+>Hellobuddy: bar
+http://localhost:8080/MySparkjavaHelloWorld/hellobuddy/
+>None
+http://localhost:8080/MySparkjavaHelloWorld/hello/foo
+>Hello: foo
+http://localhost:8080/MySparkjavaHelloWorld/
+>Hello World
+```
 ```
