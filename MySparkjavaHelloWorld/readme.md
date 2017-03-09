@@ -27,3 +27,14 @@ jetty maven dependencies, sometime recommendation is made to exclude some depend
         </exclusion>
 </exclusions>
 ```
+Test using the Web browser
+
+```shell
+http://localhost:8080/hellobuddy/foo
+
+http://localhost:8080/hellobuddy/
+
+http://localhost:8080/hello/foo
+http://localhost:8080/
+
+```
