@@ -1,0 +1,134 @@
+2017/03/07 18:04:13 INFO  - jmeter.util.JMeterUtils: Setting Locale to en_US 
+2017/03/07 18:04:13 INFO  - jmeter.JMeter: Loading user properties from: /usr/local/Cellar/jmeter/3.1/libexec/bin/user.properties 
+2017/03/07 18:04:13 INFO  - jmeter.JMeter: Loading system properties from: /usr/local/Cellar/jmeter/3.1/libexec/bin/system.properties 
+2017/03/07 18:04:13 INFO  - jmeter.JMeter: Copyright (c) 1998-2016 The Apache Software Foundation 
+2017/03/07 18:04:13 INFO  - jmeter.JMeter: Version 3.1 r1770033 
+2017/03/07 18:04:13 INFO  - jmeter.JMeter: java.version=1.8.0_101 
+2017/03/07 18:04:13 INFO  - jmeter.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM 
+2017/03/07 18:04:13 INFO  - jmeter.JMeter: os.name=Mac OS X 
+2017/03/07 18:04:13 INFO  - jmeter.JMeter: os.arch=x86_64 
+2017/03/07 18:04:13 INFO  - jmeter.JMeter: os.version=10.11.6 
+2017/03/07 18:04:13 INFO  - jmeter.JMeter: file.encoding=UTF-8 
+2017/03/07 18:04:13 INFO  - jmeter.JMeter: Max memory     =514850816 
+2017/03/07 18:04:13 INFO  - jmeter.JMeter: Available Processors =4 
+2017/03/07 18:04:13 INFO  - jmeter.JMeter: Default Locale=English (United States) 
+2017/03/07 18:04:13 INFO  - jmeter.JMeter: JMeter  Locale=English (United States) 
+2017/03/07 18:04:13 INFO  - jmeter.JMeter: JMeterHome=/usr/local/Cellar/jmeter/3.1/libexec 
+2017/03/07 18:04:13 INFO  - jmeter.JMeter: user.dir  =/Users/rumi/git/RestAPI/JSRestAPIHelloWorld 
+2017/03/07 18:04:13 INFO  - jmeter.JMeter: PWD       =/Users/rumi/git/RestAPI/JSRestAPIHelloWorld 
+2017/03/07 18:04:13 INFO  - jmeter.JMeter: IP: 192.168.0.58 Name: RUMI-MBP.local FullName: 192.168.0.58 
+2017/03/07 18:04:13 INFO  - jmeter.gui.action.LookAndFeelCommand: Using look and feel: com.apple.laf.AquaLookAndFeel [Mac OS X, System] 
+2017/03/07 18:04:13 INFO  - jmeter.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties 
+2017/03/07 18:04:15 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must contain the string: '.functions.' 
+2017/03/07 18:04:15 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must not contain the string: '.gui.' 
+2017/03/07 18:04:15 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.assertions.BSFAssertion 
+2017/03/07 18:04:16 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.extractor.BSFPostProcessor 
+2017/03/07 18:04:16 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.modifiers.BSFPreProcessor 
+2017/03/07 18:04:16 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2017/03/07 18:04:16 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2017/03/07 18:04:16 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2017/03/07 18:04:16 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2017/03/07 18:04:16 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser 
+2017/03/07 18:04:16 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser 
+2017/03/07 18:04:16 INFO  - jorphan.exec.KeyToolUtils: keytool found at 'keytool' 
+2017/03/07 18:04:16 INFO  - jmeter.protocol.http.proxy.ProxyControl: HTTP(S) Test Script Recorder SSL Proxy will use keys that support embedded 3rd party resources in file /usr/local/Cellar/jmeter/3.1/libexec/bin/proxyserver.jks 
+2017/03/07 18:04:16 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.protocol.java.sampler.BSFSampler 
+2017/03/07 18:04:16 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.protocol.mongodb.config.MongoSourceElement 
+2017/03/07 18:04:16 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.protocol.mongodb.sampler.MongoScriptSampler 
+2017/03/07 18:04:17 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.timers.BSFTimer 
+2017/03/07 18:04:17 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.visualizers.BSFListener 
+2017/03/07 18:04:17 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.visualizers.MonitorHealthVisualizer 
+2017/03/07 18:04:17 INFO  - jmeter.samplers.SampleResult: Note: Sample TimeStamps are START times 
+2017/03/07 18:04:17 INFO  - jmeter.samplers.SampleResult: sampleresult.default.encoding is set to ISO-8859-1 
+2017/03/07 18:04:17 INFO  - jmeter.samplers.SampleResult: sampleresult.useNanoTime=true 
+2017/03/07 18:04:17 INFO  - jmeter.samplers.SampleResult: sampleresult.nanoThreadSleep=5000 
+2017/03/07 18:04:21 INFO  - jmeter.gui.action.template.TemplateManager: Reading templates from:/usr/local/Cellar/jmeter/3.1/libexec/bin/templates/templates.xml 
+2017/03/07 18:04:48 INFO  - jmeter.gui.action.template.TemplateManager: Reading templates from:/usr/local/Cellar/jmeter/3.1/libexec/bin/templates/templates.xml 
+2017/03/07 18:04:55 INFO  - jmeter.gui.action.Load: Loading file: /usr/local/Cellar/jmeter/3.1/libexec/bin/templates/build-adv-web-test-plan.jmx 
+2017/03/07 18:04:55 INFO  - jmeter.save.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2 
+2017/03/07 18:04:55 INFO  - jmeter.save.SaveService: Using SaveService properties file encoding UTF-8 
+2017/03/07 18:04:55 INFO  - jmeter.save.SaveService: Using SaveService properties version 3.1 
+2017/03/07 18:04:55 INFO  - jmeter.save.SaveService: All converter versions present and correct 
+2017/03/07 18:04:55 INFO  - jmeter.save.SaveService: Loading file: /usr/local/Cellar/jmeter/3.1/libexec/bin/templates/build-adv-web-test-plan.jmx 
+2017/03/07 18:04:55 INFO  - jmeter.protocol.http.control.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_ 
+2017/03/07 18:05:11 INFO  - jmeter.services.FileServer: Default base='/Users/rumi/git/RestAPI/JSRestAPIHelloWorld' 
+2017/03/07 18:05:11 INFO  - jmeter.services.FileServer: Set new base='/usr/local/Cellar/jmeter/3.1/libexec/bin/templates' 
+2017/03/07 18:05:58 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2017/03/07 18:05:58 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2017/03/07 18:05:58 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2017/03/07 18:05:58 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2017/03/07 18:05:58 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : JMeter Users 
+2017/03/07 18:05:58 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group JMeter Users. 
+2017/03/07 18:05:58 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2017/03/07 18:05:58 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 5 perThread 5000.0 delayedStart=false 
+2017/03/07 18:05:58 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2017/03/07 18:05:58 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2017/03/07 18:05:58 INFO  - jmeter.threads.JMeterThread: Thread started: JMeter Users 1-1 
+2017/03/07 18:05:58 INFO  - jmeter.services.FileServer: Stored: CHANGE_FOLDER/login.csv 
+2017/03/07 18:05:58 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.IllegalArgumentException: File login.csv must exist and be readable
+	at org.apache.jmeter.services.FileServer.createBufferedReader(FileServer.java:421)
+	at org.apache.jmeter.services.FileServer.readLine(FileServer.java:346)
+	at org.apache.jmeter.config.CSVDataSet.iterationStart(CSVDataSet.java:199)
+	at org.apache.jmeter.control.GenericController.fireIterationStart(GenericController.java:405)
+	at org.apache.jmeter.control.GenericController.fireIterEvents(GenericController.java:397)
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:158)
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:123)
+	at org.apache.jmeter.threads.AbstractThreadGroup.next(AbstractThreadGroup.java:87)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:247)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017/03/07 18:05:58 INFO  - jmeter.threads.JMeterThread: Thread finished: JMeter Users 1-1 
+2017/03/07 18:05:58 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2017/03/07 18:05:58 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2017/03/07 18:06:56 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2017/03/07 18:06:56 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2017/03/07 18:06:56 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2017/03/07 18:06:56 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : JMeter Users 
+2017/03/07 18:06:56 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group JMeter Users. 
+2017/03/07 18:06:56 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2017/03/07 18:06:56 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 5 perThread 5000.0 delayedStart=false 
+2017/03/07 18:06:56 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2017/03/07 18:06:56 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2017/03/07 18:06:56 INFO  - jmeter.threads.JMeterThread: Thread started: JMeter Users 1-1 
+2017/03/07 18:06:56 INFO  - jmeter.services.FileServer: Stored: CHANGE_FOLDER/login.csv 
+2017/03/07 18:06:56 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.IllegalArgumentException: File login.csv must exist and be readable
+	at org.apache.jmeter.services.FileServer.createBufferedReader(FileServer.java:421)
+	at org.apache.jmeter.services.FileServer.readLine(FileServer.java:346)
+	at org.apache.jmeter.config.CSVDataSet.iterationStart(CSVDataSet.java:199)
+	at org.apache.jmeter.control.GenericController.fireIterationStart(GenericController.java:405)
+	at org.apache.jmeter.control.GenericController.fireIterEvents(GenericController.java:397)
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:158)
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:123)
+	at org.apache.jmeter.threads.AbstractThreadGroup.next(AbstractThreadGroup.java:87)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:247)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017/03/07 18:06:56 INFO  - jmeter.threads.JMeterThread: Thread finished: JMeter Users 1-1 
+2017/03/07 18:06:56 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2017/03/07 18:06:56 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2017/03/07 18:07:01 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2017/03/07 18:07:01 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2017/03/07 18:07:01 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2017/03/07 18:07:01 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : JMeter Users 
+2017/03/07 18:07:01 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group JMeter Users. 
+2017/03/07 18:07:01 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2017/03/07 18:07:01 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 5 perThread 5000.0 delayedStart=false 
+2017/03/07 18:07:01 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2017/03/07 18:07:01 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2017/03/07 18:07:01 INFO  - jmeter.threads.JMeterThread: Thread started: JMeter Users 1-1 
+2017/03/07 18:07:01 INFO  - jmeter.services.FileServer: Stored: CHANGE_FOLDER/login.csv 
+2017/03/07 18:07:01 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.IllegalArgumentException: File login.csv must exist and be readable
+	at org.apache.jmeter.services.FileServer.createBufferedReader(FileServer.java:421)
+	at org.apache.jmeter.services.FileServer.readLine(FileServer.java:346)
+	at org.apache.jmeter.config.CSVDataSet.iterationStart(CSVDataSet.java:199)
+	at org.apache.jmeter.control.GenericController.fireIterationStart(GenericController.java:405)
+	at org.apache.jmeter.control.GenericController.fireIterEvents(GenericController.java:397)
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:158)
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:123)
+	at org.apache.jmeter.threads.AbstractThreadGroup.next(AbstractThreadGroup.java:87)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:247)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017/03/07 18:07:01 INFO  - jmeter.threads.JMeterThread: Thread finished: JMeter Users 1-1 
+2017/03/07 18:07:01 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2017/03/07 18:07:01 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
