@@ -30,3 +30,21 @@ Tested with Tomcat 7.0 and Tomcat 8.5 : using different deployment modes
 
 Jmeter has been tested in the mix!
 
+
+### Examples
+
+```
+// TOMCAT
+
+// xml output
+http://localhost:8080/CrunchifyRESTJerseyExample/crunchify/ctofservice/
+http://localhost:8080/CrunchifyRESTJerseyExample/crunchify/ctofservice/56
+
+//json output
+
+http://localhost:8080/CrunchifyRESTJerseyExample/crunchify/ctofservice/
+http://localhost:8080/CrunchifyRESTJerseyExample/crunchify/ctofservice/56
+
+// Jetty
+
+```
