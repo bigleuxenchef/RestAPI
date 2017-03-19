@@ -8,7 +8,7 @@ Happy to share with anyone, happy anyone takes a copy, but I would recommend not
 
 # JSRESTAPIHelloWorld
 
-##Prerequisite
+## Prerequisite
 
 * Eclipse Neon
 * Eclipse plug-in : NodeJS, GIT, JEE
@@ -16,20 +16,20 @@ Happy to share with anyone, happy anyone takes a copy, but I would recommend not
 
 Note : as a aficionado of eclipse, my version is particulary well setup from CDT, Docket, GIT/Github, Spring, JEE, Angular, Scala, Tomcat.
 
-###Interesting links
+### Interesting links
 
 <https://www.tutorialspoint.com/nodejs/nodejs_express_framework.htm>
 
 <https://expressjs.com/>
 
-##Introduction
+## Introduction
 
 * Create an empty javascript project
 * Create an empty javascript file (i.e. RestHelloWorld.js)
 
 ***
 
-###`JSRestSimplestHelloWorld.js`
+### `JSRestSimplestHelloWorld.js`
 
 First Program, let's call it the `JSRestSimplestHelloWorld.js`
 
@@ -54,7 +54,7 @@ app.listen(3000);
 ```
 
 ***
-###`JSRestAPIHelloWorld.js`
+### `JSRestAPIHelloWorld.js`
 
 Second Program, will highlight how to manage several request and paths, let's call it `JSRestAPIHelloWorld.js`
 
@@ -83,7 +83,7 @@ var server = app.listen(8081, 'localhost', function () {
 });
 ```
 ***
-###`JSRexExp.js`
+### `JSRexExp.js`
 
 Note a router is a link between path and function.
 
