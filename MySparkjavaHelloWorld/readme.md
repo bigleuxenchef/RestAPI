@@ -4,7 +4,7 @@ I am interested in testing technologies and the best way is to do it yourself an
 
 Happy to share with anyone, happy anyone takes a copy, but I would recommend not to use any of this material as it is more for personal experiment than to achieve anything special other than learning.
 
-#MySparkJavaHelloWorld
+# MySparkJavaHelloWorld
 
 
 Tested on Apache and Jetty!
@@ -27,7 +27,7 @@ jetty maven dependencies, sometime recommendation is made to exclude some depend
         </exclusion>
 </exclusions>
 ```
-###Test using the Web browser when using Jetty
+### Test using the Web browser when using Jetty
 
 ```shell
 http://localhost:8080/hellobuddy/foo
@@ -41,7 +41,7 @@ http://localhost:8080/
 ```
 
 
-###Test using the Web browser when using Tomcat
+### Test using the Web browser when using Tomcat
 
 ```shell
 http://localhost:8080/MySparkjavaHelloWorld/hellobuddy/foo
