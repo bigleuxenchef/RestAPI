@@ -1,0 +1,9 @@
+/node_modules/
+/data/
+/bin/
+/recording.xml
+/JSHelloWorld.log
+/JSHelloWorldMultiPurpose.log
+/jmeter.log
+/HTTP Request.jmx
+/public/
