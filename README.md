@@ -1,6 +1,6 @@
 
 
 # RestAPI
-List of diffrent Samples of RestAPI
+List of different Samples of RestAPI
 
 
