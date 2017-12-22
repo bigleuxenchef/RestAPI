@@ -7,3 +7,6 @@
 /jmeter.log
 /HTTP Request.jmx
 /public/
+/views/
+/.settings/
+
