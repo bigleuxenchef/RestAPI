@@ -1,5 +1,5 @@
 /**
- * Rumi 2017
+. * Rumi 2017
  */
 
  
@@ -25,7 +25,7 @@ log4js.configure({
   categories: { default: { appenders: ['JSHelloWorldMultiPurpose','console'], level: 'error' } }
 });
 var logger = log4js.getLogger('JSHelloWorldMultiPurpose');
-logger.level ='info'
+logger.level ='trace'
 
 
 logger.info("Hello World app listening at http://localhost:3000");
@@ -65,7 +65,6 @@ app.post('/count', function(req, res,next){
 		var message = '{ \"hello world\" : ' + Counter + '}';
 		logger.info(`[${CallCount}][${req.ip}=>]POST/count` + JSON.stringify(req.query))
 		logger.trace(`[${CallCount}][${req.ip}=>]POST/count : Request.body`, req.body )
-
 	  res.send(message);
 	
 });
@@ -91,7 +90,7 @@ app.get('/CallGet', function (req, res) {
 	})
 
 app.post('/CallPost', urlencodedParser, function (req, res) {
-	logger.info(`[${req.ip}|=>]` + req.route.path + "| Body : " +JSON.stringify(req.body));
+	logger.info(`[${req.ip}|=>]` + req.route.path + "| Body : " + JSON.stringify(req.body));
 	   // Prepare output in JSON format
 	   response = {
 	      first_name:req.body.first_name,
@@ -128,7 +127,7 @@ app.get('/Download:file(*)', function(req, res, next){ // this routes all types 
 
   var path = path.resolve(".")+'/uploads/'+file;
   
-  path = 'JSRestAPIHelloWorld/public/w3logo.jpeg'
+  path = './public/w3logo.jpeg'
 	 var sleep = require('sleep');
  //sleep.sleep(10);
   res.download(path); // magic of download function
