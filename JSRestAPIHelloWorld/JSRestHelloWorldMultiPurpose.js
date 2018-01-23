@@ -5,6 +5,10 @@
  
 // Add this to the VERY top of the first file loaded in your app
 
+
+
+
+
 // integrate node js and APM from elastic
 /*
 var apm = require('elastic-apm-node').start({
