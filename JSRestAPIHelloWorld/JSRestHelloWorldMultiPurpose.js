@@ -3,8 +3,19 @@
  */
 
  
+// Add this to the VERY top of the first file loaded in your app
 
-
+// integrate node js and APM from elastic
+/*
+var apm = require('elastic-apm-node').start({
+	  // Set required app name (allowed characters: a-z, A-Z, 0-9, -, _, and space)
+	  appName: 'JSHelloWorldMultiPurpose',
+	  // Use if APM Server requires a token
+	  secretToken: '',
+	  // Set custom APM Server URL (default: http://localhost:8200)
+	  serverUrl: 'http://localhost:8200'
+	})
+*/
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
@@ -13,7 +24,6 @@ var upload = multer(); // for parsing multipart/form-data
 var fs = require('fs');
 var CallCount = 0
 var Counter = 0; //count number of request
-
 
 //Create application/x-www-form-urlencoded parser
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
