@@ -130,3 +130,9 @@ var server = app.listen(8081, 'localhost', function () {
 Then just open a browser on <http://localhost:8081>
 
 
+### `JSRestHelloWorldMultiPurpose.js`
+
+This server is a multi-purpose utilities that was created to respond to the need of a specific test.
+
+
+
