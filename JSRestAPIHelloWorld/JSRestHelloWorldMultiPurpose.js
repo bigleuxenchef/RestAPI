@@ -20,6 +20,9 @@ var apm = require('elastic-apm-node').start({
 	  serverUrl: 'http://localhost:8200'
 	})
 */
+
+
+var prettyjson = require('prettyjson');
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
@@ -28,7 +31,6 @@ var upload = multer(); // for parsing multipart/form-data
 var fs = require('fs');
 var CallCount = 0
 var Counter = 0; //count number of request
-
 //Create application/x-www-form-urlencoded parser
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
@@ -39,7 +41,7 @@ log4js.configure({
   categories: { default: { appenders: ['JSHelloWorldMultiPurpose','console'], level: 'error' } }
 });
 var logger = log4js.getLogger('JSHelloWorldMultiPurpose');
-logger.level ='trace'
+logger.level ='info'
 
 
 logger.info("Hello World app listening at http://localhost:3000");
@@ -48,6 +50,8 @@ logger.debug("Environment : \n" + JSON.stringify(process.env,null, 2))
 
 // for parsing application/json
 app.use(bodyParser.json()); 
+app.use(bodyParser.text({ type: 'text/plain' })); 
+
 
 // for parsing application/xwww-
 app.use(bodyParser.urlencoded({ extended: true })); 
@@ -104,13 +108,16 @@ app.get('/CallGet', function (req, res) {
 	})
 
 app.post('/CallPost', urlencodedParser, function (req, res) {
-	logger.info(`[${req.ip}|=>]` + req.route.path + "| Body : " + JSON.stringify(req.body));
+	logger.info(`[${req.ip}|=>]` + req.route.path + "| Body (json) : " + JSON.stringify(req.body));
+	
+
 	   // Prepare output in JSON format
 	   response = {
 	      first_name:req.body.first_name,
 	      last_name:req.body.last_name
 	   };
 	   res.end(JSON.stringify(response));
+	   
 	   logger.debug(req.route.path,req, res);
 
 	})
