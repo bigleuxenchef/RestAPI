@@ -132,7 +132,8 @@ Then just open a browser on <http://localhost:8081>
 
 ### `JSRestHelloWorldMultiPurpose.js`
 
-This server is a multi-purpose utilities that was created to respond to the need of a specific test.
+This server is a multi-purpose utility that was created to respond to the need of a specific test.
+
 
 
 
