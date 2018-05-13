@@ -135,5 +135,8 @@ Then just open a browser on <http://localhost:8081>
 This server is a multi-purpose utility that was created to respond to the need of a specific test.
 
 
+### `JSRestHelloWorldMultiPurposeAPM.js`
+
+This utility is same as previous one with the addition of the APM component of Elastic.
 
 
