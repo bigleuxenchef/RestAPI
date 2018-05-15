@@ -12,8 +12,8 @@
 //integrate node js and APM from elastic
 
 var apm = require('elastic-apm-node').start({ // Set required app name (allowed characters: a-z, A-Z, 0-9, -, _, and space) 
-	appName: 'JSHelloWorldMultiPurpose', // Use if APM Server requires a token
-	serviceName: 'SJSHelloWorldMultiPurpose',
+	appName: 'JSHelloWorldMultiPurposeAPM', // Use if APM Server requires a token
+	serviceName: 'SJSHelloWorldMultiPurposeAPM',
 	secretToken: '', // Set custom APM Server URL (default: http://localhost:8200) 
 	serverUrl: 'http://mbp15.local:8200' })
 	var spanwrap = function(F,p1,p2){
@@ -42,8 +42,8 @@ function sleep(ms) {
 
 var log4js = require('log4js');
 log4js.configure({
-	appenders: { console: { type: 'console' }, JSHelloWorldMultiPurpose: { type: 'file', filename: 'JSHelloWorldMultiPurpose.log' } },
-	categories: { default: { appenders: ['JSHelloWorldMultiPurpose', 'console'], level: 'error' } }
+	appenders: { console: { type: 'console' }, JSHelloWorldMultiPurposeAPM: { type: 'file', filename: 'JSHelloWorldMultiPurposeAPM.log' } },
+	categories: { default: { appenders: ['JSHelloWorldMultiPurposeAPM', 'console'], level: 'error' } }
 });
 var logger = log4js.getLogger('JSHelloWorldMultiPurposeAPM');
 logger.level = 'info'
