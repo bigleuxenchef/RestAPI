@@ -45,7 +45,7 @@ log4js.configure({
 	appenders: { console: { type: 'console' }, JSHelloWorldMultiPurpose: { type: 'file', filename: 'JSHelloWorldMultiPurpose.log' } },
 	categories: { default: { appenders: ['JSHelloWorldMultiPurpose', 'console'], level: 'error' } }
 });
-var logger = log4js.getLogger('JSHelloWorldMultiPurpose');
+var logger = log4js.getLogger('JSHelloWorldMultiPurposeAPM');
 logger.level = 'info'
 
 
