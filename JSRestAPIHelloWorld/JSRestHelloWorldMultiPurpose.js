@@ -113,19 +113,22 @@ app.get('/form', function (req, res) {
 	logger.debug(req.route.path, res);
 });
 
-
+// expect a command like : curl -X GET 'http://localhost:3000/CallGet?first_name=Donald&last_name=Trump'
 app.get('/CallGet', function (req, res) {
 	logger.info(`[${req.ip}=>]` + req.route.path + " - " + JSON.stringify(req.query,null, 4));
 	// Prepare output in JSON format
 	response = {
 		first_name: req.query.first_name,
-		last_name: req.query.last_name
+		last_name: req.query.last_name,
+		extend : { reqip: req.ip} // for test purpose, return multi level json
 	};
 	res.end(JSON.stringify(response));
-	logger.debug(req.route.path, res);
+	logger.debug("Full Rest Response", res);
+	logger.debug("Response : ", response)
 
 })
 
+// expect a command like : curl -X POST 'http://localhost:3000/CallPost' -H 'Content-Type: application/json' -d '{"first_name":"Donald","last_name":"Duck"}'
 app.post('/CallPost', urlencodedParser, function (req, res) {
 	logger.info(`[${req.ip}|=>]` + req.route.path + "| Body (json) : " + JSON.stringify(req.body,null, 4));
 
@@ -187,6 +190,21 @@ app.get('/Download:file(*)', function (req, res, next) { // this routes all type
 			res.download(path)}); // magic of download function
 
 });
+
+// expect a get request like:  curl -X POST   'http://localhost:3000/SetLogLevel?loglevel=info'
+app.post('/SetLogLevel', urlencodedParser, function (req, res) {
+	logger.info(`[${req.ip}|=>]` + req.route.path + "| Query (json) : " + JSON.stringify(req.query,null, 4));
+
+	logger.level = req.query.loglevel
+	// Prepare output in JSON format
+	response = {
+			res: `Log level has been elevated to ${logger.level}`
+	};
+	res.end(JSON.stringify(response));
+
+	logger.debug(req.route.path, req, res);
+
+})
 
 
 app.listen(3000);
